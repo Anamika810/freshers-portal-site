@@ -1,15 +1,271 @@
-.navbar1{ background-color:#26324a;
-height:120px;}
-.butt{ background-color:#26324a;
-border-color:#26324a;
-margin-right:15px;}
-#nav{float:left; 
-margin:0 0 0 0%; }
-.nit{ 
-margin-left:-100px;
-display:inline;
-font-family:pangolin;
-letter-spacing:1px; word-spacing: 2px; 
-color:white;}
-img{
-margin-left:20px;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+                                /* Nav bar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 13vh;
+  background-color: #26324a;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0%;
+  z-index: +1;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgb(196, 196, 196);
+
+}
+
+.nav-first img {
+  /* margin-left: -150px; */
+}
+
+.nav-first p {
+  color: #fff;
+  margin-left: 45px;
+  margin-top: -10px;
+}
+
+.logo {
+  display: inline;
+  color: rgba(255, 255, 255, 0.918);
+  font-weight: 900;
+  padding: 0px;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+
+}
+
+.nav-links li a {
+  color: rgba(255, 255, 255, 0.918);
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 0.3s ease-in all;
+}
+
+.nav-links li button {
+  color: rgba(255, 255, 255, 0.918);
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 0.3s ease-in all;
+}
+
+.nav-links li a:hover {
+  color: #ff9800;
+  cursor: pointer;
+}
+
+.nav-links li button:hover {
+  color: #ff9800;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+
+.burger {
+  display: none;
+}
+
+
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.918);
+  margin: 5px;
+  transition: 0.5s ease all;
+}
+   
+                                                      /* navbar ends */
+
+                                                      /* main starts */
+
+
+.tm-main-content { 
+  background-color: #ebdbdb;
+  max-width:auto;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .image{
+  width: 650px;
+  height: 66px;
+  border-radius: 30px 0px 30px 0px;
+  border: 2px solid #64666b;
+  box-sizing: border-box;
+  margin:0px 0px;
+  box-shadow: 5px 5px 3px 3px #888888;
+  background-color: #ffffff;
+}
+
+
+.image img{
+  float:left;
+  height: 62px;
+  width:55px;
+  border-radius: 30px 0px 30px 0px;
+  border:2px solid #64666b;
+  vertical-align:middle;
+  box-shadow: 5px 5px 3px 3px #888888;
+}
+
+.tm-section-header2 {
+  color: #64666b;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: top;
+}
+
+.tm-section-small {
+  margin: 20px auto 20px auto;
+  max-width: 653px;
+  border-radius: 30px 0px 30px 0px;
+  border:2px solid #64666b;
+  vertical-align:middle;
+  box-shadow: 5px 10px 8px 10px #888888;
+  background-color:  #abb7ce;
+}
+
+p{
+  font-size: 1.5rem;
+  line-height: 2.0;
+  padding: auto 10px auto 10px;
+}
+
+@media screen and (max-width:1100px){
+  body{
+      overflow-x: hidden;
+  }
+
+  .nav{
+      position: fixed;
+      top: 0%;
+      width: 100vw;
+      
+  }
+
+  .nav-links{
+      position: fixed;
+      right: -50%;
+      height: 87vh;
+      background-color: #26324a;
+      top: 13vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      transition: 0.5s ease-in;
+      overflow: hidden;
+  }
+
+  .nav-links li{
+      opacity: 0;
+  }
+
+
+  .burger{
+      display: block;
+      cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width:700px){
+.footer-element .footer-container .inner{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:500px){
+
+body{
+  overflow-x: hidden;
+} 
+
+.nav{
+  position: fixed;
+  top: 0%;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100vw;
+  height: 35vh;
+  
+}
+
+.tm-main-content { 
+  margin-top: 20vh;
+}
+.tm-section-header2{
+  text-align: left;
+}
+
+
+.nav-links{
+  right: -100%;
+  width: 100%;
+}
+.footer{
+  top: 13vh;
+}
+}
+
+
+@keyframes navLinkFade{
+from{
+opacity: 0;
+transform: translateX(50px);
+}
+to{
+opacity: 1;
+transform: translateX(0px);
+}
+}
+
+
+.nav-active{
+right: 0%;
+}
+
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px , 6px);
+
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px , -6px);
+}
+
+
+
